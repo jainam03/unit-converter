@@ -6,7 +6,7 @@ let massValues = document.getElementById("mass-values")
 
 convertBtn.addEventListener("click", function () {
     if (inputEl.value === "") {
-        alert("Please enter a value")
+        alert("Please enter a value first!")
     }
     let feetValue = inputEl.value * 3.28
 
@@ -21,4 +21,9 @@ convertBtn.addEventListener("click", function () {
 
     massValues.innerHTML = `${inputEl.value} Kilos = ${poundValues} pounds | ${poundValues} pounds = ${inputEl.value} kilos`
 
+})
+
+toogleMode.addEventListener("click", function () {
+    var element = document.body
+    element.classList.toggle("dark-mode")
 })
