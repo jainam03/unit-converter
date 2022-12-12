@@ -5,40 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Unit converter</title>
     <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 
-    <div class="main-container">
-        <div class="hero">
-            <h1>Metric/Imperial Unit Conversion</h1>
-            <input type="text" placeholder="0"> <br> <br>
-            <button>Convert</button>
-        </div>
 
-        <div class="main">
-            <div class="section">
-                <h3>Length (Meter/Feet)</h3>
-                <p>0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
-            </div>
-        </div>
+    <div class="hero">
+        <h1>Metric/Imperial Unit Conversion</h1>
+        <input type="text" placeholder="0" id="input"> <br> <br>
+        <button id="convert-btn">Convert</button>
+    </div>
 
-        <div class="main">
-            <div class="section">
-                <h3>Volume (litres/Gallons)</h3>
-                <p>0 litres = 0.000 gallons | 0 gallons = 0.000 litres</p>
-            </div>
-        </div>
-
-        <div class="main">
-            <div class="section">
-                <h3>Mass (Kilograms/Pounds)</h3>
-                <p>0 Kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
-            </div>
+    <div class="main">
+        <div class="section">
+            <h3>Length (Meter/Feet)</h3>
+            <p id="length-values">0 meters = 0.000 feet | 0 feet = 0.000 meters</p>
         </div>
     </div>
+
+    <div class="main">
+        <div class="section">
+            <h3>Volume (litres/Gallons)</h3>
+            <p id="volume-values">0 litres = 0.000 gallons | 0 gallons = 0.000 litres</p>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="section">
+            <h3>Mass (Kilograms/Pounds)</h3>
+            <p id="mass-values">0 Kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+        </div>
+    </div>
+
+    <h3 style="color:white">Made with 💙 using Vanilla Javascript :-)</h3>
+
+    <a href="https://github.com/jainam03/unit-converter" target="_blank"><i class="fa fa-github"></i></a>
+
 
     <script src="index.js"></script>
 </body>

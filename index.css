@@ -20,14 +20,9 @@ body {
     background: var(--darkest);
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
-
 .hero {
     background: #6943FF;
-    padding: 30px;
+    padding: 25px;
 
     color: white;
 }
@@ -42,8 +37,9 @@ body {
 }
 
 .section {
-    background: white;
     padding: 5px;
+
+    border-radius: 1rem;
 
     background: var(--dark);
     color: #CCC1FF;
@@ -82,4 +78,20 @@ button:hover {
 button:active {
     background: #fff;
     box-shadow: 0 0 10px gray;
+}
+
+a {
+    color: white;
+
+    font-size: 30px;
+
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    transition: 0.4s;
+
+    border-radius: 50%;
+
 }
