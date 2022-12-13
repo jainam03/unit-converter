@@ -21,7 +21,7 @@ body {
 }
 
 .hero {
-    background: #6943FF;
+    background: #435fff;
     padding: 25px;
 
     color: white;
@@ -42,7 +42,7 @@ body {
     border-radius: 1rem;
 
     background: var(--dark);
-    color: #CCC1FF;
+    color: #c1ebff;
 }
 
 input {
