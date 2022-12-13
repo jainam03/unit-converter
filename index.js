@@ -4,9 +4,13 @@ let lengthValues = document.getElementById("length-values")
 let volumeValues = document.getElementById("volume-values")
 let massValues = document.getElementById("mass-values")
 
+// let toggleBtn = document.getElementById("toggle-btn")
+
+let clearBtn = document.getElementById("clear-btn");
 convertBtn.addEventListener("click", function () {
     if (inputEl.value === "") {
         alert("Please enter a value first!")
+        return false
     }
     let feetValue = inputEl.value * 3.28
 
@@ -23,7 +27,28 @@ convertBtn.addEventListener("click", function () {
 
 })
 
-toogleMode.addEventListener("click", function () {
-    var element = document.body
-    element.classList.toggle("dark-mode")
+clearBtn.addEventListener("click", function () {
+    inputEl.value = ""
+
+    lengthValues.innerHTML = `0 meters = 0.000 feet | 0 feet = 0.000 meters`
+
+    volumeValues.innerHTML = `0 litres = 0.000 gallons | 0 gallons = 0.000 litres`
+
+    massValues.innerHTML = `0 Kilos = 0.000 pounds | 0 pounds = 0.000 kilos`
+
+    // alert("All values cleared!")
+
+    setTimeout(() => {
+        alert("All cleared!")
+    }, 100)
 })
+
+// toogleMode.addEventListener("click", function () {
+//     var element = document.body
+//     element.classList.toggle("dark-mode")
+// })
+
+// function toggle() {
+//     // alert("You pressed toggle button")
+//     document.getElementById("main").style.color = "blue"
+// }
