@@ -9,6 +9,9 @@
     --dark: #273549;
     --darker: #1F2937;
     --darkest: #11161e;
+
+    --light-teal: #c1ebff;
+    --white: #fff;
 }
 
 body {
@@ -24,11 +27,11 @@ body {
     background: #435fff;
     padding: 25px;
 
-    color: white;
+    color: var(--white);
 }
 
 .main {
-    background: #f4f4f4;
+    background: var(--white);
     padding: 10px;
 
     background: var(--darker);
@@ -42,7 +45,7 @@ body {
     border-radius: 1rem;
 
     background: var(--dark);
-    color: #c1ebff;
+    color: var(--light-teal);
 }
 
 input {
@@ -66,21 +69,21 @@ button {
 
     font-size: 1.2rem;
 
-    background: #fff;
+    background: var(--white);
 
     transition: 0.2s;
 }
 
 button:hover {
-    background: rgb(189, 188, 204);
+    background: rgb(232, 230, 248);
 }
 
 button:active {
-    background: #fff;
+    background: var(--white);
 }
 
 a {
-    color: #c1ebff;
+    color: var(--light-teal);
 
     font-size: 30px;
 
