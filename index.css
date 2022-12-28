@@ -25,7 +25,7 @@ body {
 
 .hero {
     background: #435fff;
-    padding: 25px;
+    padding: 10px;
 
     color: var(--white);
 }
