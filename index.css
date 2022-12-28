@@ -25,7 +25,7 @@ body {
 
 .hero {
     background: #435fff;
-    padding: 10px;
+    padding: 7px;
 
     color: var(--white);
 }
@@ -96,4 +96,8 @@ a {
 
     border-radius: 50%;
 
+}
+
+h3 {
+    margin-bottom: 11px;
 }
