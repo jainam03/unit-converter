@@ -8,9 +8,21 @@ let massValues = document.getElementById("mass-values")
 
 let clearBtn = document.getElementById("clear-btn");
 convertBtn.addEventListener("click", function () {
+    allNumeric();
     if (inputEl.value === "") {
         alert("Please enter a value first!")
         return false
+    }
+
+    function allNumeric() {
+        var numbers = /^[0-9]+$/;
+        if (inputEl.value.match(numbers)) {
+            console.log('valid input')
+            return true;
+        } else {
+            alert("Input should be numbers only")
+            window.location.reload()
+        }
     }
     let feetValue = inputEl.value * 3.28
 
@@ -29,8 +41,8 @@ convertBtn.addEventListener("click", function () {
 
 clearBtn.addEventListener("click", function () {
     inputEl.value = ""
-    
-    window.location.reload()
+
+    // window.location.reload()
 
     lengthValues.innerHTML = `0 meters = 0.000 feet | 0 feet = 0.000 meters`
 
@@ -42,15 +54,9 @@ clearBtn.addEventListener("click", function () {
 
     setTimeout(() => {
         alert("All cleared!")
-    }, 100)
+    }, 200)
+
+    setTimeout(() => {
+        window.location.reload()
+    }, 210)
 })
-
-// toogleMode.addEventListener("click", function () {
-//     var element = document.body
-//     element.classList.toggle("dark-mode")
-// })
-
-// function toggle() {
-//     // alert("You pressed toggle button")
-//     document.getElementById("main").style.color = "blue"
-// }
