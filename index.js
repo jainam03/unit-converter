@@ -3,10 +3,8 @@ let convertBtn = document.getElementById("convert-btn")
 let lengthValues = document.getElementById("length-values")
 let volumeValues = document.getElementById("volume-values")
 let massValues = document.getElementById("mass-values")
-
-// let toggleBtn = document.getElementById("toggle-btn")
-
 let clearBtn = document.getElementById("clear-btn");
+
 convertBtn.addEventListener("click", function () {
     allNumeric();
     if (inputEl.value === "") {
@@ -42,15 +40,11 @@ convertBtn.addEventListener("click", function () {
 clearBtn.addEventListener("click", function () {
     inputEl.value = ""
 
-    // window.location.reload()
-
     lengthValues.innerHTML = `0 meters = 0.000 feet | 0 feet = 0.000 meters`
 
     volumeValues.innerHTML = `0 litres = 0.000 gallons | 0 gallons = 0.000 litres`
 
     massValues.innerHTML = `0 Kilos = 0.000 pounds | 0 pounds = 0.000 kilos`
-
-    // alert("All values cleared!")
 
     setTimeout(() => {
         alert("All cleared!")
