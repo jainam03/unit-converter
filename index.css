@@ -82,6 +82,10 @@ button:active {
     background: var(--white);
 }
 
+button:focus {
+    border: none;
+}
+
 a {
     color: var(--light-teal);
 
