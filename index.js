@@ -29,6 +29,8 @@ convertBtn.addEventListener("click", function () {
 
 clearBtn.addEventListener("click", function () {
     inputEl.value = ""
+    
+    window.location.reload()
 
     lengthValues.innerHTML = `0 meters = 0.000 feet | 0 feet = 0.000 meters`
 
