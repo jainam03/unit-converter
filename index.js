@@ -6,7 +6,7 @@ let massValues = document.getElementById("mass-values")
 let clearBtn = document.getElementById("clear-btn");
 
 convertBtn.addEventListener("click", function () {
-    allNumeric();
+    // allNumeric();
     if (inputEl.value === "") {
         alert("Please enter a value first!")
         return false
@@ -22,6 +22,7 @@ convertBtn.addEventListener("click", function () {
             window.location.reload()
         }
     }
+    allNumeric();
     let feetValue = inputEl.value * 3.28
 
     lengthValues.innerHTML = `${inputEl.value} meters = ${feetValue} feet | ${feetValue} feet = ${inputEl.value} meters`
