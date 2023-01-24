@@ -46,6 +46,8 @@ input {
 
     border: 1px;
     border-radius: 10px;
+    
+    outline: none;
 }
 
 button {
@@ -57,6 +59,7 @@ button {
     cursor: pointer;
     padding: 5px;
 
+    outline: none;
     border-radius: 10px;
     border: none;
 
